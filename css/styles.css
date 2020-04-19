@@ -1,0 +1,40 @@
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.column1 {
+  position: relative;
+  display: inline-block;
+  width: 57%;
+}
+
+.column2 {
+  width: 43%;
+}
+
+.row {
+  margin: 0;
+}
+
+.background-image {
+  width: 100%;
+}
+
+.logo {
+  position: absolute;
+  top: 60px;
+  left: 140px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: auto;
+  padding: 30px 0;
+}
+
+.attribution a {
+  color: #3A4C98;
+  color: hsl(228, 45%, 44%);
+}
