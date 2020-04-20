@@ -106,6 +106,17 @@ form {
   left: 140px;
 }
 
+.error {
+  color: #C07D87;
+  font-size: 14px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.icon-error {
+  margin-left: -130px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
