@@ -15,6 +15,7 @@ h1 {
 h2 {
   text-transform: uppercase;
   font-weight: 200;
+  color: #ce9797;
   color: hsl(0, 36%, 70%);
   letter-spacing: 1rem;
   font-size: 3.5rem;
@@ -22,9 +23,57 @@ h2 {
 }
 
 p {
+  color: #ce9797;
   color: hsl(0, 36%, 70%);
   margin-top: 20px;
-  width: 70%;
+  width: 65%;
+}
+
+input {
+  border: 0.5px solid #DAC4C6;
+  border-radius: 54px;
+  padding: 15px 30px;
+  width: 65%;
+  background-color: transparent;
+}
+
+button {
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  border: 0;
+  border-radius: 54px;
+  width: 90px;
+  height: 56px;
+  margin-left: -80px;
+  box-shadow: 0 5px 10px 5px rgba(243, 217, 216, 0.8);
+}
+
+button:focus {
+  background-image: linear-gradient(135deg, #fdeded, #f8bfbf);
+  box-shadow: 0 5px 10px 5px rgba(231, 191, 191, 0.6);
+  outline: 0;
+  border: 0;
+}
+
+input:focus {
+  border-radius: 54px;
+  outline: none;
+  border: 2px solid #ee8c8c;
+  border: 2px solid hsl(0, 74%, 74%);
+  padding: 14px 30px;
+}
+
+form {
+  margin-top: 50px;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: #EDDBDB;
+}
+:-ms-input-placeholder { /* Internet Explorer */
+  color: #EDDBDB;
+}
+::placeholder {
+  color: #EDDBDB;
 }
 
 .text-box {
