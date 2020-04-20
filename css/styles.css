@@ -1,8 +1,5 @@
-
 body {
   font-family: 'Josefin Sans', sans-serif;
-  margin: 0;
-  padding: 0;
 }
 
 .h1-text {
@@ -44,14 +41,29 @@ input {
   background-color: transparent;
 }
 
+.button-frame {
+  width: 150px;
+  height: 56px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.icon-error {
+  position: absolute;
+  left: 0;
+  top: 30%;
+}
+
 button {
+  height: 56px;
+  width: 90px;
   background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   border: 0;
   border-radius: 54px;
-  width: 90px;
-  height: 56px;
-  margin-left: -130px;
   box-shadow: 0 5px 10px 5px rgba(243, 217, 216, 0.8);
+  left: 35px;
+  position: absolute;
 }
 
 button:focus {
@@ -72,14 +84,19 @@ input:focus {
 form {
   margin-top: 50px;
   margin-bottom: 100px;
+  position: relative;
 }
 
-::-webkit-input-placeholder { /* Edge */
+::-webkit-input-placeholder {
+  /* Edge */
   color: #EDDBDB;
 }
-:-ms-input-placeholder { /* Internet Explorer */
+
+:-ms-input-placeholder {
+  /* Internet Explorer */
   color: #EDDBDB;
 }
+
 ::placeholder {
   color: #EDDBDB;
 }
@@ -125,10 +142,6 @@ form {
   margin-top: 10px;
 }
 
-.icon-error {
-  margin-left: -180px;
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -144,7 +157,7 @@ form {
 }
 
 .hero-mobile {
-  width:100%;
+  width: 100%;
   display: block;
   margin-bottom: 50px;
   padding: 0;
@@ -166,6 +179,7 @@ form {
     text-align: left;
     font-size: 3.5rem;
   }
+
   .text-box {
     position: absolute;
     top: 200px;
@@ -181,7 +195,7 @@ form {
   }
 
   .hero-mobile {
-    width:100%;
+    width: 100%;
     display: none;
   }
 
@@ -193,7 +207,6 @@ form {
 
   .column2 {
     width: 42.4%;
-
     display: block;
   }
 
@@ -219,16 +232,19 @@ form {
     margin-top: 10px;
   }
 
-  .icon-error {
-    margin-left: -130px;
+  .button-frame {
+    position: absolute;
+    top: 0;
+    right: 30%;
   }
 
-  button {
-    margin-left: -80px;
+  .icon-error {
+    position: absolute;
+    left: 0;
+    top: 30%;
   }
 
   form {
     margin-bottom: 0;
   }
-
 }
