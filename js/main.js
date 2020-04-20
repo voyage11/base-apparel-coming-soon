@@ -1,8 +1,12 @@
 var isFormSubmitted = localStorage.getItem("isFormSubmitted");
 var isValidEmail = localStorage.getItem("isValidEmail");
+var email = localStorage.getItem("email");
 if(isFormSubmitted === "true" && isValidEmail === "false") {
+  console.log("email: " + email);
   $(".error").show();
   $(".icon-error").show();
+  $("input").val(email);
+  $("input").focus();
 } else {
   $(".error").hide();
   $(".icon-error").hide();
@@ -19,6 +23,7 @@ $("button").click(function( event ) {
     $(".error").show();
     $(".icon-error").show();
     localStorage.isValidEmail  = false;
+    localStorage.email = $("input").val();
   }
 });
 
